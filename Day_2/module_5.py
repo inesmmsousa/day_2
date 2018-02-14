@@ -28,8 +28,4 @@ if __name__ == '__main__':
         print('usage: module.py <int1> <int2>')
         sys.exit(0)
         
-    sum_all(valor1. valor2)
-    print(sys.argv)
-    
-    
-    pass
+    print(sum_all(valor1. valor2))

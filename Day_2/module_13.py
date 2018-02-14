@@ -15,10 +15,10 @@ if __name__ == '__main__':
         for line in handle_in: ## read line by line
             for word in line.split():
                 
-                word = word.strip() ## clean spaces and line feed begin and end
-                for char in word:
-                    print(char)
-                
+#                 word = word.strip() ## clean spaces and line feed begin and end
+#                 for char in word:
+#                     print(char)
+#                 
                 if (len(word) == 0 or not word.isalpha()): continue
                 word = word.lower()
                 if word in dict: dict[word] += 1
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     
     count = 0
     for sorted_key in sorted(dict_value.keys(), reverse=True):
-        print(sorted_key,dict_value[sorted_key])
+        print(sorted_key, dict_value[sorted_key])
         count += 1
         if (count > 10): break
         
@@ -46,8 +46,3 @@ if __name__ == '__main__':
 #         print(key, dict[key])
 #         sum_words += dict[key]
 #     print('total words: ' + str(sum_words))
-    
-    
-    
-    
-    pass

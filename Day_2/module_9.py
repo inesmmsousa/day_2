@@ -12,7 +12,7 @@ if __name__ == '__main__':
     text = input('insert text: ')
     
     dict = {} 
-    for cahar_1 in text:
+    for char_1 in text:
         # print(char_1)
         
         if (not char_1.isalpha()): continue ## go to the begin of the loop
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # make key sort
     for key in sorted(dict.keys()):
         print(key. dict[key])        
-    print(dict)
+  
                 
     
     

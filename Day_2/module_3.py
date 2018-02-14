@@ -10,8 +10,9 @@ import sys
 if __name__ == '__main__':
     
     
+    vect_float = []
     while True:
-        vect_float = {}
+         
         number = input('float number?')
         number = utils.vect_float(number)
         if (number != None):
@@ -32,7 +33,7 @@ if __name__ == '__main__':
         if (min == None or min > value): min = value
         soma += value
     
-    print('max: {} Average: {}'.format(max,min,soma/len(vect_float)))
+    print('max: {}    Min {}    Average: {}'.format(max,min,soma/len(vect_float)))
      
     
     pass
